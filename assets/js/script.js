@@ -1,12 +1,14 @@
 // Wait for DOM to finish loading before game can start
 // Add event listeners to the buttons
 
+let userChoice;
+
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            let userChoice = (this.getAttribute("data-type"))
+            userChoice = (this.getAttribute("data-type"))
             let compChoice = Math.floor(Math.random() * 5);
             switch (compChoice) {
                 case 0: compChoice = "ice";
