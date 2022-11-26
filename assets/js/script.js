@@ -2,7 +2,7 @@ let userChoice
 let compChoice
 
 /**
- * Take the users choice and the computers choice and
+ * Takes the users choice and the computers choice and
  * compares them to see who wins or if it is a draw.
  * Updates the score to +1 for a winner.
  */
@@ -12,6 +12,7 @@ function compare(compChoice) {
     } else if (userChoice === "ice") {
         if (compChoice === "ground") {
             return "Ice freezes Ground, you win!";
+            // Add something to increase the correct score by 1 for every possible right answer?
         } else if (compChoice === "fire") {
             return "Ice is melted by Fire, you loose!";
         } else if (compChoice === "grass") {
