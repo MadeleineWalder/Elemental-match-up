@@ -1,0 +1,64 @@
+let userChoice
+let compChoice
+
+/**
+ * Take the users choice and the computers choice and
+ * compares them to see who wins or if it is a draw.
+ * Updates the score to +1 for a winner.
+ */
+function compare(compChoice) {
+    if (userChoice === compChoice) {
+        return "The computer chose the same answer, it's a draw!";
+    } else if (userChoice === "ice") {
+        if (compChoice === "ground") {
+            return "Ice freezes Ground, you win!";
+        } else if (compChoice === "fire") {
+            return "Ice is melted by Fire, you loose!";
+        } else if (compChoice === "grass") {
+            return "Ice freezes Grass, you win!";
+        } else {
+            return "Ice is smashed by Rock, you loose!";
+        }
+    } else if (userChoice === "ground") {
+        if (compChoice === "fire") {
+            return "Ground engulfs Fire, you win!";
+        } else if (compChoice === "grass") {
+            return "Ground is grow on by Grass, you loose!";
+        } else if (compChoice === "rock") {
+            return "Ground engulfs Rock, you win!";
+        } else {
+            return "Ground is frozen by Ice, you loose!";
+        }
+    } else if (userChoice === "fire") {
+        if (compChoice === "grass") {
+            return "Fire burns Grass, you win!";
+        } else if (compChoice === "rock") {
+            return "Fire is covered by Rock, you loose!";
+        } else if (compChoice === "ice") {
+            return "Fire melts Ice, you win!";
+        } else {
+            return "Fire is engulfed by Ground, you loose!";
+        }
+    } else if (userChoice === "grass") {
+        if (compChoice === "rock") {
+            return "Grass grows over Rock, you win!";
+        } else if (compChoice === "ice") {
+            return "Grass is frozen by Ice, you loose!";
+        } else if (compChoice === "ground") {
+            return "Grass grows over Ground, you win!";
+        } else {
+            return "Grass is burned by Fire, you loose!";
+        }
+    } else if (userChoice === "rock") {
+        if (compChoice === "ice") {
+            return "Rock smashes Ice, you win!";
+        } else if (compChoice === "ground") {
+            return "Rock is engulfed by Ground, you loose!";
+        } else if (compChoice === "fire") {
+            return "Rock covers Fire, you win!";
+        } else {
+            return "Rock is grown on by Grass, you loose!";
+        }
+    }
+}
+
