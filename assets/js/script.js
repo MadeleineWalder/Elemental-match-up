@@ -95,6 +95,7 @@ function compareChoice() {
             return "Rock is grown on by Grass, you loose!";
         }
     }
+    document.getElementById("result").innerHTML = compareChoice();
 }
 
 // document.getElementById("result").innerHTML = compareChoice();
