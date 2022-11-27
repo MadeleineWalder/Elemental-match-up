@@ -2,14 +2,18 @@
 // Add event listeners to the buttons
 
 let userChoice;
+let compChoice;
 
 document.addEventListener("DOMContentLoaded", function() {
+    result = "";
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            userChoice = (this.getAttribute("data-type"))
-            let compChoice = Math.floor(Math.random() * 5);
+            userChoice = (this.getAttribute("data-type"));
+            document.getElementById("user-choice").innerText = userChoice;
+            console.log(userChoice); // remove later
+            compChoice = Math.floor(Math.random() * 5);
             switch (compChoice) {
                 case 0: compChoice = "ice";
                 break;
@@ -22,10 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 4: compChoice = "rock";
                 break;
             }
+            document.getElementById("comp-choice").innerText = compChoice;
+            console.log(compChoice) // remove later
             compareChoice();                                                                                                            
-        })
+        });
     }
-})
+});
 
 /**
  * Takes the users choice and the computers choice and
@@ -33,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
  * (Updates the score to +1 for a winner?)
  */
 function compareChoice() {
+    console.log(compChoice); // remove later
     if (userChoice === compChoice) {
         return "The computer chose the same answer, it's a draw!";
     } else if (userChoice === "ice") {
@@ -90,15 +97,34 @@ function compareChoice() {
     }
 }
 
+// document.getElementById("result").innerHTML = compareChoice();
+
+
+// Need to figure out how and where to call the function below
+
 /**
  * Increments score by +1 to the winner
  */
-function incrementScore() {
+function incrementUserScore() {
     let oldScore = parseInt(document.getElementById("user-score").innerText);
     document.getElementById("user-score").innerText = ++oldScore;
 }
 
-function incrementWrongAnswer() {
+function incrementComputerScore() {
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("icomputer-score").innerText = ++oldScore;
+    document.getElementById("computer-score").innerText = ++oldScore;
+}
+
+// or use something like this? Instead of 'this' might need to create a variable
+// called result and set it to document.getElementById("result"). Then have if
+// result.innerText(?) === "You win!" then call incrementUserScore function.
+
+function scoreChanges() {
+    if (this.document.getElementById("result").value === "You win!") {
+        let oldScore = parseInt(document.getElementById("user-score").innerText);
+        document.getElementById("user-score").innerText = ++oldScore;
+    } else {
+        let oldScore = parseInt(document.getElementById("computer-score").innerText);
+        document.getElementById("computer-score").innerText = ++oldScore;
+    }
 }
