@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 4: compChoice = "rock";
                 break;
             }
-            compare(compChoice);
+            compareChoice();                                                                                                            
         })
     }
 })
@@ -30,17 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * Takes the users choice and the computers choice and
  * compares them to see who wins or if it is a draw.
- * Updates the score to +1 for a winner.
+ * (Updates the score to +1 for a winner?)
  */
-function compare(compChoice) {
+function compareChoice() {
     if (userChoice === compChoice) {
         return "The computer chose the same answer, it's a draw!";
     } else if (userChoice === "ice") {
         if (compChoice === "ground") {
             return "Ice freezes Ground, you win!";
-            // Add something to increase the correct score by 1 for every possible right answer?
+            // Add something to increase user score by 1 for every possible win?
         } else if (compChoice === "fire") {
             return "Ice is melted by Fire, you loose!";
+            // Add something to increase the computer score by 1 for every possible loose?
         } else if (compChoice === "grass") {
             return "Ice freezes Grass, you win!";
         } else {
@@ -89,3 +90,15 @@ function compare(compChoice) {
     }
 }
 
+/**
+ * Increments score by +1 to the winner
+ */
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++oldScore;
+}
+
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("icomputer-score").innerText = ++oldScore;
+}
