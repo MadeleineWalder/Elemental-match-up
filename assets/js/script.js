@@ -1,9 +1,11 @@
-// Wait for DOM to finish loading before game can start
-// Add event listeners to the buttons
-
 let userChoice;
 let compChoice;
 
+/**
+ * Waits for Dom content to finish loading before game can run.
+ * Adds event listeners to the buttons and has the computer pick 
+ * an answer randomly when a button is pressed.
+ */
 document.addEventListener("DOMContentLoaded", function() {
     result = "";
     let buttons = document.getElementsByTagName("button");
@@ -12,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             userChoice = (this.getAttribute("data-type"));
             document.getElementById("user-choice").innerText = userChoice;
-            console.log(userChoice); // remove later
             compChoice = Math.floor(Math.random() * 5);
             switch (compChoice) {
                 case 0: compChoice = "ice";
@@ -27,105 +28,97 @@ document.addEventListener("DOMContentLoaded", function() {
                 break;
             }
             document.getElementById("comp-choice").innerText = compChoice;
-            console.log(compChoice) // remove later
-            compareChoice();                                                                                                            
+            let resultString = compareChoice();
+            displayResult(resultString);                                                                                                     
         });
     }
 });
 
+
 /**
- * Takes the users choice and the computers choice and
- * compares them to see who wins or if it is a draw.
- * (Updates the score to +1 for a winner?)
+ * Displays the returned result message to the user.
+ */
+function displayResult(result) {
+    console.log(result);
+    document.getElementById("result").innerHTML = result;
+    checkScore();
+}
+
+/**
+ * Compares the users choice and the computers choice to see who wins or if it is a draw
+ * and the returns an answer. 
  */
 function compareChoice() {
-    console.log(compChoice); // remove later
+    console.log(compChoice);
+    console.log(userChoice);
     if (userChoice === compChoice) {
         return "The computer chose the same answer, it's a draw!";
     } else if (userChoice === "ice") {
         if (compChoice === "ground") {
-            return "Ice freezes Ground, you win!";
-            // Add something to increase user score by 1 for every possible win?
+            return "You win!";
         } else if (compChoice === "fire") {
-            return "Ice is melted by Fire, you loose!";
-            // Add something to increase the computer score by 1 for every possible loose?
+            return "You loose!";
         } else if (compChoice === "grass") {
-            return "Ice freezes Grass, you win!";
+            return "You win!";
         } else {
-            return "Ice is smashed by Rock, you loose!";
+            return "You loose!";
         }
     } else if (userChoice === "ground") {
         if (compChoice === "fire") {
-            return "Ground engulfs Fire, you win!";
+            return "You win!";
         } else if (compChoice === "grass") {
-            return "Ground is grow on by Grass, you loose!";
+            return "You loose!";
         } else if (compChoice === "rock") {
-            return "Ground engulfs Rock, you win!";
+            return "You win!";
         } else {
-            return "Ground is frozen by Ice, you loose!";
+            return "You loose!";
         }
     } else if (userChoice === "fire") {
         if (compChoice === "grass") {
-            return "Fire burns Grass, you win!";
+            return "You win!";
         } else if (compChoice === "rock") {
-            return "Fire is covered by Rock, you loose!";
+            return "You loose!";
         } else if (compChoice === "ice") {
-            return "Fire melts Ice, you win!";
+            return "You win!";
         } else {
-            return "Fire is engulfed by Ground, you loose!";
+            return "You loose!";
         }
     } else if (userChoice === "grass") {
         if (compChoice === "rock") {
-            return "Grass grows over Rock, you win!";
+            return "You win!";
         } else if (compChoice === "ice") {
-            return "Grass is frozen by Ice, you loose!";
+            return "You loose!";
         } else if (compChoice === "ground") {
-            return "Grass grows over Ground, you win!";
+            return "You win!";
         } else {
-            return "Grass is burned by Fire, you loose!";
+            return "You loose!";
         }
     } else if (userChoice === "rock") {
         if (compChoice === "ice") {
-            return "Rock smashes Ice, you win!";
+            return "You win!";
         } else if (compChoice === "ground") {
-            return "Rock is engulfed by Ground, you loose!";
+            return "You loose!";
         } else if (compChoice === "fire") {
-            return "Rock covers Fire, you win!";
+            return "You win!";
         } else {
-            return "Rock is grown on by Grass, you loose!";
+            return "You loose!";
         }
     }
-    document.getElementById("result").innerHTML = compareChoice();
 }
 
-// document.getElementById("result").innerHTML = compareChoice();
-
-
-// Need to figure out how and where to call the function below
+let userScore = 0;
+let computerScore = 0;
 
 /**
- * Increments score by +1 to the winner
+ * Function to determine if user score or computer score should increase
+ * and if so then increase that score by 1.
  */
-function incrementUserScore() {
-    let oldScore = parseInt(document.getElementById("user-score").innerText);
-    document.getElementById("user-score").innerText = ++oldScore;
-}
-
-function incrementComputerScore() {
-    let oldScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldScore;
-}
-
-// or use something like this? Instead of 'this' might need to create a variable
-// called result and set it to document.getElementById("result"). Then have if
-// result.innerText(?) === "You win!" then call incrementUserScore function.
-
-function scoreChanges() {
-    if (this.document.getElementById("result").value === "You win!") {
-        let oldScore = parseInt(document.getElementById("user-score").innerText);
-        document.getElementById("user-score").innerText = ++oldScore;
-    } else {
-        let oldScore = parseInt(document.getElementById("computer-score").innerText);
-        document.getElementById("computer-score").innerText = ++oldScore;
+function checkScore() {
+    if (document.getElementById("result").innerHTML === "You win!") {
+        userScore ++;
+        document.getElementById("user-score").textContent = userScore;
+    } else if (document.getElementById("result").innerHTML === "You loose!") {
+        computerScore ++;
+        document.getElementById("computer-score").textContent = computerScore;
     }
 }
