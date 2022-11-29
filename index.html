@@ -10,37 +10,39 @@
     <title>Pokemon Rock-Paper-Scissors</title>
 </head>
 <body>
-    <header>
-        <h1>Pokémon Rock-Paper-Scissors!</h1>
-    </header>
-    <img src="assets/images/typesimg.webp" alt="A type chart showing effectiveness of certain elements against each other">
-    <div class="choice-area">
-        <button data-type="ice" class="btn btn--blue">
-            <h2>Ice</h2>
-        </button>
-        <button data-type="ground" class="btn btn--brown">
-            <h2>Ground</h2>
-        </button>
-        <button data-type="fire" class="btn btn--red">
-            <h2>Fire</h2>
-        </button>
-        <button data-type="grass" class="btn btn--green">
-            <h2>Grass</h2>
-        </button>
-        <button data-type="rock" class="btn btn--orange">
-            <h2>Rock</h2>
-        </button>
+    <div class="content">
+        <header>
+            <h1>Pokémon Rock-Paper-Scissors!</h1>
+        </header>
+        <img src="assets/images/typesimg.webp" alt="A type chart showing effectiveness of certain elements against each other">
+        <div class="choice-area">
+            <button data-type="ice" class="btn btn--blue">
+                <h2>Ice</h2>
+            </button>
+            <button data-type="ground" class="btn btn--brown">
+                <h2>Ground</h2>
+            </button>
+            <button data-type="fire" class="btn btn--red">
+                <h2>Fire</h2>
+            </button>
+            <button data-type="grass" class="btn btn--green">
+                <h2>Grass</h2>
+            </button>
+            <button data-type="rock" class="btn btn--orange">
+                <h2>Rock</h2>
+            </button>
+        </div>
+        <div class="result-area">
+            <p>You chose: <span id="user-choice"></span></p>
+            <p>The computer chose: <span id="comp-choice"></span></p>
+            <p>Result: <span id="result"></span></p>
+        </div>
+        <div id="score-area">
+            <p class="scores">User score: <span id="user-score">0</span></p>
+            <p class="scores">Computer score: <span id="computer-score">0</span></p>
+        </div>
     </div>
-    <div class="result-area">
-        <p>You chose: <span id="user-choice"></span></p>
-        <p>The computer chose: <span id="comp-choice"></span></p>
-        <p>Result: <span id="result"></span></p>
-    </div>
-    <div id="score-area">
-        <p class="scores">User score: <span id="user-score">0</span></p>
-        <p class="scores">Computer score: <span id="computer-score">0</span></p>
-    </div>
-    <footer>
+    <footer class="footer">
         <p>Rules: Ice freezes Ground and Grass. Ground engulfs Fire and Rock. Fire burns Grass and Ice. Grass grows on Ground and Rock. Rock destroys Ice and Fire.</p>
     </footer>
 
