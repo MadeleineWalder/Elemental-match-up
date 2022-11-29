@@ -1,0 +1,26 @@
+body {
+    font-family: "Nerko One", sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #be2528;
+    color: white;
+}
+
+h1 {
+    font-size: 350%;
+}
+
+p {
+    font-size: 170%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: ;
+    background-color: #be2528;
+    color: white;
+}
