@@ -42,23 +42,28 @@ p {
 }
 
 .btn--blue {
-    background-color: aqua;
+    background-color: #01ffff;
 }
 
 .btn--brown {
-    background-color: burlywood;
+    background-color: #ffcb99;
 }
 
 .btn--red {
-    background-color: red;
+    background-color: #fe0000;
 }
 
 .btn--green {
-    background-color: green;
+    background-color: #01cc00;
 }
 
 .btn--orange {
-    background-color: orange;
+    background-color: #ff7f00;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .footer {
