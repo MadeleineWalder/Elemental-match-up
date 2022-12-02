@@ -49,11 +49,23 @@ p {
     margin: auto; /*centering of image*/
 }
 
+/* Using flexbox to make the buttons responsive */
+.choice-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.choice-area > * {
+    flex: 0 1 12ch;
+}
+
 /* Styling the buttons */
 .btn {
     font-family: "Nerko One", sans-serif;
     font-size: 110%;
-    width: 10em;
+    margin: 1%;
+    width: 8%;
 }
 
 .btn--blue {
@@ -84,4 +96,8 @@ p {
 /* Making sure the footer stays at the bottom of the page */
 .footer {
     flex-shrink: 0;
+}
+
+@media screen and (max-width:250) {
+    
 }
