@@ -28,6 +28,7 @@ header {
 /* Logo and font sizes */
 h1 {
     font-size: 380%;
+    padding: 1%;
 }
 
 p {
@@ -44,7 +45,7 @@ p {
 .type-chart-container img {
     display: block;
     width: 100%;
-    max-width: 700px; /*actual image width or width you want it to be*/
+    max-width: 600px; /*actual image width or width you want it to be*/
     height: auto; /* maintain aspect ratio*/
     margin: auto; /*centering of image*/
 }
@@ -96,8 +97,84 @@ p {
 /* Making sure the footer stays at the bottom of the page */
 .footer {
     flex-shrink: 0;
+    padding: 1%;
 }
 
-@media screen and (max-width:280) {
+@media screen and (max-width: 2000px) {
+    h1 {
+        font-size: 320%;
+    }
+    
+    p {
+        font-size: 140%;
+    }
+    
+}
+
+/* Screen size for Nest Hub Max */
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-size: 300%;
+    }
+    
+    p {
+        font-size: 120%;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+    
+}
+
+/* Screen size for Surface Duo */
+@media screen and (max-width: 540px) {
+    .btn {
+        font-size: 90%;
+    }
+    
+}
+
+/* Screen size for iPhone XR */
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 280%;
+    }
+    
+}
+
+/* Screen size for iPhone 12 Pro */
+@media screen and (max-width: 390px) {
+    h1 {
+        font-size: 260%;
+    }
+
+    .btn {
+        font-size: 80%;
+    }
+    
+}
+
+/* Screen size for Samsung Galaxy S8+ */
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 250%;
+    }
+
+}
+
+/* Screen size for Galaxy Fold */
+@media screen and (max-width: 280px) {
+    h1 {
+        font-size: 240%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .btn {
+        font-size: 70%;
+    }
     
 }
