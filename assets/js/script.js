@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
  * Displays the returned result message to the user.
  */
 function displayResult(result) {
-    console.log(result);
     document.getElementById("result").innerHTML = result;
     checkScore();
 }
@@ -49,8 +48,6 @@ function displayResult(result) {
  * and the returns an answer. 
  */
 function compareChoice() {
-    console.log(compChoice);
-    console.log(userChoice);
     if (userChoice === compChoice) {
         return "The computer chose the same answer, it's a draw!";
     } else if (userChoice === "ice") {

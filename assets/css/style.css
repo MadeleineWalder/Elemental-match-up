@@ -1,4 +1,4 @@
-/* Making the header stay at the top of the body and styling them */
+/* Making the header stay at the top of the body and ading basic styling to them both */
 html, body {
     height: 100%;
 }
@@ -16,19 +16,29 @@ body, h1 {
 
 header {
     width: 100%;
-    color: #f2c304;
-    -webkit-text-stroke: 1px #2e67b0;
-    text-transform: uppercase;
 }
 
 .content {
     flex: 1 0 auto;
 }
 
-/* Logo and font sizes */
+/* Removing defualt link styling so logo can be styled */
+a {
+    outline: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Logo styling and font sizes for whole page */
 h1 {
     font-size: 380%;
     padding: 1%;
+}
+
+.logo {
+    color: #f2c304;
+    -webkit-text-stroke: 1px #2e67b0;
+    text-transform: uppercase;
 }
 
 p {
@@ -100,6 +110,8 @@ p {
     padding: 1%;
 }
 
+/* Adding media queries for different screen sizes */ 
+/* Screen size for smaller desktops */
 @media screen and (max-width: 2000px) {
     h1 {
         font-size: 320%;
