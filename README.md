@@ -110,11 +110,11 @@ Phone size example:
 
 ![The finished diagram on my website](./docs/screenshots/diagram3.jpg)
 
-- **The Choice Area:** This is the area that contains the buttons. The user will see that the buttons will wrap to the line below when the screen size gets too small for them to fit clearly on one line. (At 414px width or below.)
+- **The Choice Area:** This is the area that contains the buttons. The user will see that the buttons will wrap to the line below when the screen size gets too small for them to fit clearly on one line. (At 686px width or below.)
 
 ![Example of the buttons normally](./docs/screenshots/buttons.jpg)
 
-![Example of the buttons on a screen size of 414px wide or lower](./docs/screenshots/buttonsphone.jpg)
+![Example of the buttons on a screen size of 686px wide or lower](./docs/screenshots/buttonsphone.jpg)
 
 - They also have a hover pseudo class. The user should see that they change to a black background with white text when hovered over.
 
@@ -124,21 +124,23 @@ Phone size example:
 
 ![Screenshot showing the scores set to 0 under the image](./docs/screenshots/blank.jpg)
 
-- **Game Testing:** When the user clicks on a button, its 'data-type' or the text within the button should show up after 'You chose:' to show the user what they chose. The computers random choice will then be visible to the user after the 'Computer chose:' text. The text following 'Result:' will also change depending on the outcome, so that the user can see it, and the score will then change acordingly for the user to see.
+- **Results and Scores:** When the user clicks on a button, its 'data-type' or the text within the button should show up after 'You chose:' to show the user what they chose. The computers random choice will then be visible to the user after the 'Computer chose:' text. The text following 'Result:' will also change depending on the outcome, so that the user can see it, and the score will then change acordingly for the user to see.
 
-Example of a user loosing:
+Examples:
+
+The user picks ice and computer picks fire. The user looses, the computer gains a point.
 
 ![The result shows the user loosing, the computer gets a point](./docs/screenshots/gametest5.jpg)
 
-Example of a user winning:
+The user picked fire and the computer picked grass. The user wins, they gain a point.
 
 ![The result shows the user winning, they get a point](./docs/screenshots/gametest4.jpg)
 
-Example of a draw:
+Both picked rock, so it's a draw. No points are awarded.
 
 ![The result shows a draw, the scores don't change](./docs/screenshots/gametest3.jpg)
 
-Example of the score increasing as the game is played more:
+Example of the score increasing as the game is played multiple times:
 
 ![The results continue to climb](./docs/screenshots/gametest6.jpg)
 
