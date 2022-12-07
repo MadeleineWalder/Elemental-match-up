@@ -2,9 +2,9 @@
 
 This website is made to display and run the traditional childhood game of rock-paper-scissors but with a fun twist. Based on the famous 'Rock-Paper-Scissors-Lizard-Spock game from the popular TV series The Big Bang Theory, my game is using the type match ups from the world wide famouse franchise of Pokémon. There are five different options for the users to choose from, and although there are many more Pokémon types eacvh of these five have two weaknesses and two strengths. This makes it an equal chance of winning or loosing no matter what you pick, just like in regular rock-paper-scissors. The goal with this website was to make a fun looking game that is also fairly simple so it is easy for children use. They are able to play against the computer and see the scores clearly. As well as being a childrens game, the website could also be considered educational in helping children to learn the type match ups as this would be very helpful when playing the Pokémon card or video games.
 
-### Link to deployed site:
+### Link to deployed site: https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
 
-![A screenshot of my finished website appearing on different devices](./docs/screenshots/)
+![A screenshot of my finished website appearing on different devices](./docs/screenshots/finishedshot.jpg)
 
 [Photo taken using amiresponsive.com](https://ui.dev/amiresponsive)
 
@@ -198,11 +198,12 @@ Phone size:
 - To deploy my site I first went to Github and found my project repository on the left hand side and clicked it.
 - I then clicked on 'Settings' and then the 'Pages' option on the left.   
 - Here I changed the branch from 'none' to 'main'.
-- Finally I clicked save and after a short while it produced a link to my deployed site.
+- Finally I clicked save and after a short while a link to my deployed site is displayed on screen.
+- It can take a few minutes, but if nothing happens I find that typing anything in the 'Custom domain' input box and pressing enter can cause the page to produce the link.
 - I made sure to click on the link to check that it worked.
 
 **Link to deployed site:**
-INSERT HERE
+https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
 
 ---
 
