@@ -15,6 +15,7 @@ This website is made to display and run the traditional childhood game of rock-p
 - As a user I would like to be able to play a simple game against the computer
 - As a user I would like the website to be child friendly and easy to use
 - As a user I should be able to see clear instructions/rules for the game
+- As a user I will need to know if I won, lost or drew the game each time
 - As a user I need to be able to see my score and the computers score
 
 
@@ -65,7 +66,7 @@ This website is made to display and run the traditional childhood game of rock-p
 - [Diagrams.net](https://app.diagrams.net/) is the website I used to create my diagram and save it as an image for use on my website.
 - [Image Color Picker](https://imagecolorpicker.com/en) is the website which I used for selecting the hex colour code from my diagram to use on the corresponding buttons.
 - [Google Fonts](https://developers.google.com/fonts) is where I sourced my font from.
-- [Am I Responsive.com](https://ui.dev/amiresponsive) is the website I used to show my finished site on different devices at the top of this page.
+- [Am I Responsive](https://ui.dev/amiresponsive) is the website I used to show my finished site on different devices at the top of this page.
 
 ---
 
@@ -106,7 +107,7 @@ Phone size example:
 
 ![Adding colour and text to the diagram](./docs/screenshots/diagram2.jpg)
 
-- The finished product looked much better than other images I could've sourced online.
+- The user will see the finished product that looks like this.
 
 ![The finished diagram on my website](./docs/screenshots/diagram3.jpg)
 
@@ -162,13 +163,13 @@ Phone size:
 
 - I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html. The results showed 0 errors.
 
-![The W3C Validator showing no errors in my HTML](./docs/screenshots)
+![The W3C Validator showing no errors in my HTML](./docs/screenshots/htmlval.jpg)
 
 - I used the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to test my CSS and there were 0 errors.
 
 ![The W3C Validator showing no errors in my CSS](./docs/screenshots/cssval.jpg)
 
-- I have tested my JavaScript using [JSHint](https://jshint.com/) and there are some warnings but no errors. The variable 'result' that is undefined is on purpose, so that it resets every time the page is refreshed or opened.
+- I have tested my JavaScript using [JSHint](https://jshint.com/) and there are some warnings but no errors. The variable 'result' that is undefined is on purpose, so that it resets to blank every time the page is refreshed or opened.
 
 ![The JSHint validator showing no errors in my JavaScript](./docs/screenshots/jshint1.jpg)
 
@@ -206,3 +207,5 @@ INSERT HERE
 ---
 
 ## Credits:
+
+- I would like to credit a website called [codesdope.com](https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/) as I used a line of code displayed on their website in my CSS file on line 40. The syntax I used was ' -webkit-text-stroke: ' and I followed it with my own code of ' 1px #2e67b0; ' it to add the blue outline to my header text. 

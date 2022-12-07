@@ -37,7 +37,7 @@ h1 {
 
 .logo {
     color: #f2c304;
-    -webkit-text-stroke: 1px #2e67b0;
+    -webkit-text-stroke: 1px #2e67b0; /* Credit to codesdope.com for this line, more info in readme.md */
     text-transform: uppercase;
 }
 
@@ -55,9 +55,9 @@ p {
 .type-chart-container img {
     display: block;
     width: 100%;
-    max-width: 600px; /*actual image width or width you want it to be*/
-    height: auto; /* maintain aspect ratio*/
-    margin: auto; /*centering of image*/
+    max-width: 600px; 
+    height: auto; 
+    margin: auto; 
 }
 
 /* Using flexbox to make the buttons responsive */
