@@ -13,7 +13,6 @@ This website is made to display and run the traditional childhood game of rock-p
 ## User Expectations / Stories
 
 - As a user I would like to be able to play a simple game against the computer
-- As a user I would like the website to be child friendly and easy to use
 - As a user I should be able to see clear instructions/rules for the game
 - As a user I will need to know if I won, lost or drew the game each time
 - As a user I need to be able to see my score and the computers score
@@ -31,7 +30,7 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ### *Design Features:*
 
-- **Color Scheme:** I wanted the colour scheme to be bright ans playful to appeal to children. It is also based around the colours often used in the Pokémon franchise itself to clearly show what the game is about. I used the a blue outline with yellow text for the header, taking inspiration from the classic blue and yellow Pokémon logo. Of course due to copyright I could not use their actual logo in my work. The colours of the buttons match the corresponding ones on the diagram and are based off of what colours are commonly used for each type in the Pokémon games, for example red for fire, light blue for ice and so on. This will help anyone who has played the video games to remember the types and noy get confused by the colours chosen. I kept the background white and used black text for two reasons: this is how text oftent appears in the video games, and it is easy to read for young children whilst contrasting nicely from the brightly coloured buttons and diagram.
+- **Color Scheme:** I wanted the colour scheme to be bright ans playful to appeal to children. It is also based around the colours often used in the Pokémon franchise itself to clearly show what the game is about. I used the a blue outline with yellow text for the header, taking inspiration from the classic blue and yellow Pokémon logo. Of course due to copyright I could not use their actual logo in my work. The colours of the buttons are based off of what colours are commonly used for each type in the Pokémon games, for example red for fire, light blue for ice and so on. This will help anyone who has played the video games to remember the types and noy get confused by the colours chosen. I kept the background white and used black text for two reasons: this is how text oftent appears in the video games, and it is easy to read for young children whilst contrasting nicely from the brightly coloured buttons.
 
 - **Font:** I used a font called 'Nerko One' which I found on Google Fonts. I chose it because it has a fun yet simplistic look to suit my young target audience. It's not too complicated but also suits the playful Pokémon theme very well as it's quite bold and curvy. I decided to stick with this font for the entire site (except in the diagram image as I couldn't use it there) as it worked do well and gave the site a complete, clean look. Multiple fonts on a website with not so much content coould look messy and be harder for young children to read. At first I was annoyed that I could'nt add the same font into the diagram, but then I realised this was probably better. It having a different font from the buttons shows that it is not interactable, but a separate image that cannot be clicked on. Helvetica is the name of the font used in the diagram and I chose it because it's a little thinner which gives it a simple and clean look. Again it's very easy to read, which is essential for the diagram to convey information effectively.
 
@@ -39,9 +38,7 @@ This website is made to display and run the traditional childhood game of rock-p
 
 - **The Header:** In the header I simply used a h1 element to write the title of my page. I didn't want it to be too long as that would be confusing and not very eye-catching. So I went with 'Pokémon Rock-Paper-Scissors' instead of something like 'Ice-Ground-Fire-Grass-Rock', which would be an obvious name for it since the game itself is based on Rock-Paper-Scissors-Lizard-Spock. However this is a little too long and hard to remember to appeal for my target audience. Referencing both Pokémon and rock-paper-scissors in the header immediatly tells the user what the game is about.
 
-- **The Diagram:** The diagram I created myself and saved as an image to use on my website. It sits in the center of the page and is quite large as it need to be easy to see the writting and arrow directions. The image itself sits inside a div element, allowing me to apply flex styling to them in the CSS file. This ensures that the image stays in the center and is responsive to the screen size.
-
-- **The Choice Area:** This is the name given to a class which is applied to the div containing my buttons. It is the area of the page where the user can choose their option out of the five given types. The buttons match the exact same hex colour as their corresponding rectangle on the diagram to clearly link them. This helps the user see what choice is effective aginst/ weak against what. They also have a hover rule applied in the CSS so that they turn black with white text when hovered over. This is also where the JavaScript comes in. An event listener is applied to the buttons. When a buttons is clicked, its name or 'data-type' is set as the user's choice. A function is then called to make the computer pick a random answer out of the same five options. THis is set as the computers choice. The users and computers choices are then compared in another function. The result is then displayed in the next section of the page.
+- **The Choice Area:** This is the name given to a class which is applied to the div containing my buttons. It is the area of the page where the user can choose their option out of the five given type. The buttons have a hover rule applied in the CSS so that they turn black with white text when hovered over. This is also where the JavaScript comes in. An event listener is applied to the buttons. When a buttons is clicked, its name or 'data-type' is set as the user's choice. A function is then called to make the computer pick a random answer out of the same five options. THis is set as the computers choice. The users and computers choices are then compared in another function. The result is then displayed in the next section of the page.
 
 - **The Result Area:** The result area consists of three paragraphs each with a span for an answer to be put into. The colours here are black text on a white background, keeping with the flow of the page. The users choice is diplayed using JavaScript, so the user can check what they picked, as is the computers random answer. If the function comparing the two choices finds that they are the same, it will siplay the message: "The computer chose the same answer, it's a draw!". If it finds that the users choice beats the computers choice, it will display: "You win!". If the computer beats the user it will display: "You loose!". This helps the user understand what is happening. It is of course important that they know if they won or not.
 
@@ -95,22 +92,6 @@ Phone size example:
 
 ![Screenshot of website home page on iPhone XR](./docs/screenshots/mainphone.jpg)
 
-- **The Diagram Image:** When testing out different images for my site, I found that there aren't many images currently available of this diagram specifically. The best one I could find was this one below, but I didn't think it was good enough to use in my site. It isn't very clear, the quality of image isn't great and the colours don't stand out.
-
-![An image of the types diagram I based my own diagram off of](./docs/screenshots/typesimg.webp)
-
-- So I decided to make my own diagram using a website called [Diagrams.net](https://app.diagrams.net/). Using the squared background to help align, I began making my diagram with the same basic structure as the first image. It shows how the different types effect each other really clearly.
-
-![Creating the blank diagram layout](./docs/screenshots/diagram1.jpg) 
-
-- Then I added the bright colours and black text to fit my colour scheme. One feature which is really useful about this website is that you can use hex code to choose colours for your diagram. This allowed me to pick colours that fit well with my colour scheme and use the exact same colours elsewhere on my site.
-
-![Adding colour and text to the diagram](./docs/screenshots/diagram2.jpg)
-
-- The user will see the finished product that looks like this.
-
-![The finished diagram on my website](./docs/screenshots/diagram3.jpg)
-
 - **The Choice Area:** This is the area that contains the buttons. The user will see that the buttons will wrap to the line below when the screen size gets too small for them to fit clearly on one line. (At 686px width or below.)
 
 ![Example of the buttons normally](./docs/screenshots/buttons.jpg)
@@ -145,20 +126,6 @@ Example of the score increasing as the game is played multiple times:
 
 ![The results continue to climb](./docs/screenshots/gametest6.jpg)
 
-- **The Footer:** The user should see that the footer text will fit onto more lines at a smaller screen size to become more easily readable.
-
-Desktop size:
-
-![The footer text on one line at desktop screen size](./docs/screenshots/footerdesktop.jpg)
-
-Tablet size:
-
-![The footer text on two lines at tablet screen size](./docs/screenshots/footertablet.jpg)
-
-Phone size:
-
-![The footer text on four lines at phone screen size](./docs/screenshots/footerphone.jpg)
-
 ## Validator Testing:
 
 - I used the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to test my html. The results showed 0 errors.
@@ -169,9 +136,9 @@ Phone size:
 
 ![The W3C Validator showing no errors in my CSS](./docs/screenshots/cssval.jpg)
 
-- I have tested my JavaScript using [JSHint](https://jshint.com/) and there are some warnings but no errors. The variable 'result' that is undefined is on purpose, so that it resets to blank every time the page is refreshed or opened.
+- I have tested my JavaScript using [JSHint](https://jshint.com/) and there is one warning but no errors. The variable 'result' that is undefined is on purpose, so that it resets to blank every time the page is refreshed or opened.
 
-![The JSHint validator showing no errors in my JavaScript](./docs/screenshots/jshint1.jpg)
+![The JSHint validator showing no errors in my JavaScript](./docs/screenshots/jshint2.jpg)
 
 - I have tested my site using the devtools Lighthouse feature. The score is very good with a minimum of 90% in each field.
 

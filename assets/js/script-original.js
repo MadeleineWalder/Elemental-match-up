@@ -49,7 +49,7 @@ function displayResult(result) {
  */
 function compareChoice() {
     if (userChoice === compChoice) {
-        return "It's a draw!";
+        return "The computer chose the same answer, it's a draw!";
     } else if (userChoice === "ice") {
         if (compChoice === "ground") {
             return "You win!";

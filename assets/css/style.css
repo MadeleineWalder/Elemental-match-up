@@ -31,7 +31,7 @@ a {
 
 /* Logo styling and font sizes for whole page */
 h1 {
-    font-size: 380%;
+    font-size: 390%;
     padding: 1%;
 }
 
@@ -45,6 +45,14 @@ p {
     font-size: 170%;
 }
 
+/* Styling instructions div to center it so text is not too close to screen edge */
+.instructions {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* remove? */
 /* Flexbox container to center image and keep it responsive */
 .type-chart-container {
     display: flex;
@@ -59,6 +67,7 @@ p {
     height: auto; 
     margin: auto; 
 }
+/* remove? */
 
 /* Using flexbox to make the buttons responsive */
 .choice-area {
@@ -69,6 +78,10 @@ p {
 
 .choice-area > * {
     flex: 0 1 12ch;
+}
+
+.choice-area {
+    margin-top: 2%;
 }
 
 /* Styling the buttons */
@@ -103,12 +116,6 @@ p {
 .btn:hover {
     background-color: black;
     color: white;
-}
-
-/* Making sure the footer stays at the bottom of the page */
-.footer {
-    flex-shrink: 0;
-    padding: 1%;
 }
 
 /* Adding media queries for different screen sizes */ 
