@@ -1,4 +1,4 @@
-/* Making the header stay at the top of the body and ading basic styling to them both */
+/* Making the header stay at the top of the body and adding the font from Google Fonts */
 html, body {
     height: 100%;
 }
@@ -52,39 +52,20 @@ p {
     padding-right: 5%;
 }
 
-/* remove? */
-/* Flexbox container to center image and keep it responsive */
-.type-chart-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.type-chart-container img {
-    display: block;
-    width: 100%;
-    max-width: 600px; 
-    height: auto; 
-    margin: auto; 
-}
-/* remove? */
-
-/* Using flexbox to make the buttons responsive */
+/* Using flexbox to make the buttons responsive. Making them not sit too close to other elements */
 .choice-area {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .choice-area > * {
     flex: 0 1 12ch;
 }
 
-.choice-area {
-    margin-top: 2%;
-}
-
-/* Styling the buttons */
+/* Styling the buttons size, position and font */
 .btn {
     font-family: "Nerko One", sans-serif;
     font-size: 160%;
@@ -93,6 +74,7 @@ p {
     width: 8%;
 }
 
+/* Adding a different colour to each button and the colour for the hover rule */
 .btn--blue {
     background-color: #01ffff;
 }
@@ -118,6 +100,20 @@ p {
     color: white;
 }
 
+/* Aligning the results in the center and adding colour */
+.result-container {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.result-area {
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+}
+
 /* Adding media queries for different screen sizes */ 
 /* Screen size for smaller desktops */
 @media screen and (max-width: 2000px) {
@@ -127,6 +123,10 @@ p {
     
     p {
         font-size: 140%;
+    }
+
+    .result-area {
+        width: 60%;
     }
     
 }
@@ -139,8 +139,7 @@ p {
 
     .btn {
         font-size: 140%;
-    }
-    
+    }    
 }
 
 /* Screen size for iPad Air */
@@ -216,5 +215,4 @@ p {
     .btn {
         font-size: 100%;
     }
-    
 }

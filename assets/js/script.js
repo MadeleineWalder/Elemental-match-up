@@ -5,7 +5,7 @@ let userScore = 0;
 let computerScore = 0;
 
 /**
- * Adds event listener to buttons
+ * Adds event listener to buttons.
  */
 function initializeGame() {
     result = "";
@@ -17,8 +17,8 @@ function initializeGame() {
 }
 
 /**
- * Assigns value to userChoice based on button clicked
- * Random picks and assigns a value to compChoice
+ * Assigns value to userChoice based on button clicked.
+ * Randomly picks computers choice and assigns it to compChoice.
  */
 function initializeIcon(event) {
     userChoice = (event.target.getAttribute("data-type"));
@@ -42,8 +42,8 @@ function initializeIcon(event) {
 }
 
 /**
- * Checks for a draw
- * Returns the appropriate result string
+ * Checks for a draw.
+ * Returns the appropriate result string.
  */
 function compareChoice() {
     if (userChoice === compChoice) {
@@ -56,7 +56,7 @@ function compareChoice() {
 }
 
 /**
- * Checks if user meets the win conditions
+ * Checks if the user meets the win conditions.
  */   
 function isUserWinner(userChoice, computerChoice) {
     let winOptions = USER_WIN_CONDITIONS[userChoice];
@@ -64,7 +64,7 @@ function isUserWinner(userChoice, computerChoice) {
 }
 
 /**
- * Displays the result string to the user
+ * Displays the result string to the user.
  */
 function displayResult(result) {
     document.getElementById("result").innerHTML = result;
@@ -73,7 +73,8 @@ function displayResult(result) {
 
 /**
  * Determines if the user score or computer score should increase
- * and if so increases that score by 1
+ * based on the result string.
+ * If so increases that score by 1.
  */
 function checkScore() {
     if (document.getElementById("result").innerHTML === "You win!") {
@@ -87,8 +88,8 @@ function checkScore() {
 
 /* Sets the user win conditions */
 let USER_WIN_CONDITIONS = {
-    'ice' : ['ground', 'grass'],
-    "ground": ["fire", "rock"], // Why did he write second one in "" and the first in '' ? Hopefully there's no difference.
+    "ice" : ["ground", "grass"],
+    "ground": ["fire", "rock"],
     "fire": ["grass", "ice"],
     "grass": ["ground", "rock"],
     "rock": ["ice", "fire"]
