@@ -1,13 +1,11 @@
-/**
- * Variables
- */
+/* Variables */
 let userChoice;
 let compChoice;
 let userScore = 0;
 let computerScore = 0;
 
 /**
- * Starts game by adding event listener to buttons
+ * Adds event listener to buttons
  */
 function initializeGame() {
     result = "";
@@ -19,7 +17,8 @@ function initializeGame() {
 }
 
 /**
- * Assigns value to userChoice and compChoice
+ * Assigns value to userChoice based on button clicked
+ * Random picks and assigns a value to compChoice
  */
 function initializeIcon(event) {
     userChoice = (event.target.getAttribute("data-type"));
@@ -43,7 +42,29 @@ function initializeIcon(event) {
 }
 
 /**
- * Displays the returned result message to the user.
+ * Checks for a draw
+ * Returns the appropriate result string
+ */
+function compareChoice() {
+    if (userChoice === compChoice) {
+        return "The computer chose the same answer, it's a draw!";
+    } else if (isUserWinner(userChoice, compChoice)) {
+        return "You win!";
+    } else {
+        return "You loose!";
+    }
+}
+
+/**
+ * Checks if user meets the win conditions
+ */   
+function isUserWinner(userChoice, computerChoice) {
+    let winOptions = USER_WIN_CONDITIONS[userChoice];
+    return winOptions.includes(computerChoice);
+}
+
+/**
+ * Displays the result string to the user
  */
 function displayResult(result) {
     document.getElementById("result").innerHTML = result;
@@ -51,8 +72,8 @@ function displayResult(result) {
 }
 
 /**
- * Function to determine if user score or computer score should increase
- * and if so then increase that score by 1.
+ * Determines if the user score or computer score should increase
+ * and if so increases that score by 1
  */
 function checkScore() {
     if (document.getElementById("result").innerHTML === "You win!") {
@@ -64,27 +85,7 @@ function checkScore() {
     }
 }
 
-/**
- * Checks for a draw then a win, if neither then it's a loose
- */
-function compareChoice() {
-    if (userChoice === compChoice) {
-        return "The computer chose the same answer, it's a draw!";
-    } else if (isUserWinner(userChoice, compChoice)) {
-        return "You win!";
-    } else {
-        return "You loose!";
-    }
-}
-   
-function isUserWinner(userChoice, computerChoice) {
-    let winOptions = USER_WIN_CONDITIONS[userChoice];
-    return winOptions.includes(computerChoice);
-}
-
-/**
- * Sets win conditions.
- */
+/* Sets the user win conditions */
 let USER_WIN_CONDITIONS = {
     'ice' : ['ground', 'grass'],
     "ground": ["fire", "rock"], // Why did he write second one in "" and the first in '' ? Hopefully there's no difference.
@@ -93,7 +94,5 @@ let USER_WIN_CONDITIONS = {
     "rock": ["ice", "fire"]
 };
 
-/**
- * Starts game when page content is loaded
- */
+/* Starts game when page content is loaded */
 document.addEventListener("DOMContentLoaded", initializeGame);
