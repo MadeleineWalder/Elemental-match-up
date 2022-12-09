@@ -1,39 +1,46 @@
+/**
+ * Variables
+ */
 let userChoice;
 let compChoice;
+let userScore = 0;
+let computerScore = 0;
 
 /**
- * Waits for Dom content to finish loading before game can run.
- * Adds event listeners to the buttons and has the computer pick 
- * an answer randomly when a button is pressed.
+ * Starts game by adding event listener to buttons
  */
-document.addEventListener("DOMContentLoaded", function() {
+function initializeGame() {
     result = "";
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
-            userChoice = (this.getAttribute("data-type"));
-            document.getElementById("user-choice").innerText = userChoice;
-            compChoice = Math.floor(Math.random() * 5);
-            switch (compChoice) {
-                case 0: compChoice = "ice";
-                break;
-                case 1: compChoice = "ground";
-                break;
-                case 2: compChoice = "fire";
-                break;
-                case 3: compChoice = "grass";
-                break;
-                case 4: compChoice = "rock";
-                break;
-            }
-            document.getElementById("comp-choice").innerText = compChoice;
-            let resultString = compareChoice();
-            displayResult(resultString);                                                                                                     
-        });
+        button.addEventListener("click", initializeIcon);
     }
-});
+}
 
+/**
+ * Assigns value to userChoice and compChoice
+ */
+function initializeIcon(event) {
+    userChoice = (event.target.getAttribute("data-type"));
+    document.getElementById("user-choice").innerText = userChoice;
+    compChoice = Math.floor(Math.random() * 5);
+        switch (compChoice) {
+            case 0: compChoice = "ice";
+            break;
+            case 1: compChoice = "ground";
+            break;
+            case 2: compChoice = "fire";
+            break;
+            case 3: compChoice = "grass";
+            break;
+            case 4: compChoice = "rock";
+            break;
+        }
+    document.getElementById("comp-choice").innerText = compChoice;
+    let resultString = compareChoice();
+    displayResult(resultString);
+}
 
 /**
  * Displays the returned result message to the user.
@@ -42,69 +49,6 @@ function displayResult(result) {
     document.getElementById("result").innerHTML = result;
     checkScore();
 }
-
-/**
- * Compares the users choice and the computers choice to see who wins or if it is a draw
- * and the returns an answer. 
- */
-function compareChoice() {
-    if (userChoice === compChoice) {
-        return "It's a draw!";
-    } else if (userChoice === "ice") {
-        if (compChoice === "ground") {
-            return "You win!";
-        } else if (compChoice === "fire") {
-            return "You loose!";
-        } else if (compChoice === "grass") {
-            return "You win!";
-        } else {
-            return "You loose!";
-        }
-    } else if (userChoice === "ground") {
-        if (compChoice === "fire") {
-            return "You win!";
-        } else if (compChoice === "grass") {
-            return "You loose!";
-        } else if (compChoice === "rock") {
-            return "You win!";
-        } else {
-            return "You loose!";
-        }
-    } else if (userChoice === "fire") {
-        if (compChoice === "grass") {
-            return "You win!";
-        } else if (compChoice === "rock") {
-            return "You loose!";
-        } else if (compChoice === "ice") {
-            return "You win!";
-        } else {
-            return "You loose!";
-        }
-    } else if (userChoice === "grass") {
-        if (compChoice === "rock") {
-            return "You win!";
-        } else if (compChoice === "ice") {
-            return "You loose!";
-        } else if (compChoice === "ground") {
-            return "You win!";
-        } else {
-            return "You loose!";
-        }
-    } else if (userChoice === "rock") {
-        if (compChoice === "ice") {
-            return "You win!";
-        } else if (compChoice === "ground") {
-            return "You loose!";
-        } else if (compChoice === "fire") {
-            return "You win!";
-        } else {
-            return "You loose!";
-        }
-    }
-}
-
-let userScore = 0;
-let computerScore = 0;
 
 /**
  * Function to determine if user score or computer score should increase
@@ -119,3 +63,37 @@ function checkScore() {
         document.getElementById("computer-score").textContent = computerScore;
     }
 }
+
+/**
+ * Checks for a draw then a win, if neither then it's a loose
+ */
+function compareChoice() {
+    if (userChoice === compChoice) {
+        return "The computer chose the same answer, it's a draw!";
+    } else if (isUserWinner(userChoice, compChoice)) {
+        return "You win!";
+    } else {
+        return "You loose!";
+    }
+}
+   
+function isUserWinner(userChoice, computerChoice) {
+    let winOptions = USER_WIN_CONDITIONS[userChoice];
+    return winOptions.includes(computerChoice);
+}
+
+/**
+ * Sets win conditions.
+ */
+let USER_WIN_CONDITIONS = {
+    'ice' : ['ground', 'grass'],
+    "ground": ["fire", "rock"], // Why did he write second one in "" and the first in '' ? Hopefully there's no difference.
+    "fire": ["grass", "ice"],
+    "grass": ["ground", "rock"],
+    "rock": ["ice", "fire"]
+};
+
+/**
+ * Starts game when page content is loaded
+ */
+document.addEventListener("DOMContentLoaded", initializeGame);
