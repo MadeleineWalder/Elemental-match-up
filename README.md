@@ -78,7 +78,7 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ### Test Cases:
 
-- **Main Page:** Upon opening the website the user will see the main and only page, starting with heading in the center. As you can see everything on the page is responsive to the screen size. All the text, the buttons and the image reduce in size as the screen size gets smaller thanks to the use of media queries and flexbox in the CSS file.
+- **Main Page:** Upon opening the website the user will see the main and only page. Everything on the page is responsive to the screen size and all the content is centered.
 
 Desktop size example:
 
@@ -86,29 +86,77 @@ Desktop size example:
 
 Tablet size example:
 
-![Screenshot of website home page on iPad](./docs/screenshots/maintablet.jpg)
+![Screenshot of website home page on a tablet screen size](./docs/screenshots/maintablet.jpg)
 
 Phone size example:
 
-![Screenshot of website home page on iPhone XR](./docs/screenshots/mainphone.jpg)
+![Screenshot of website home page on a phone screen size](./docs/screenshots/mainphone.jpg)
+
+- **The Header:** The header is responsive to the screen size and fits on to more than one line where needed.
+
+Desktop size example:
+
+![Screenshot of the header on desktop](./docs/screenshots/headerdesktop.jpg)
+
+Tablet size example:
+
+![Screenshot of the header on a tablet screen size](./docs/screenshots/headertablet.jpg)
+
+Phone size example:
+
+![Screenshot of the header on a phone screen size](./docs/screenshots/headerphone.jpg)
+
+- **The Rules:** The user should be able to see the game rules written here for them to follow.
+
+Desktop size example:
+
+![Screenshot of the instructions on desktop](./docs/screenshots/instructionsdesktop.jpg)
+
+Tablet size example:
+
+![Screenshot of the instructions on a tablet screen size](./docs/screenshots/instructionstablet.jpg)
+
+Phone size example:
+
+![Screenshot of the instructions on a phone screen size](./docs/screenshots/instructionsphone.jpg)
 
 - **The Choice Area:** This is the area that contains the buttons. The user will see that the buttons will wrap to the line below when the screen size gets too small for them to fit clearly on one line. (At 686px width or below.)
 
+Desktop size example:
+
 ![Example of the buttons normally](./docs/screenshots/buttons.jpg)
 
-![Example of the buttons on a screen size of 686px wide or lower](./docs/screenshots/buttonsphone.jpg)
+Tablet size example:
+
+![Example of the buttons on a tablet screen size](./docs/screenshots/buttonstablet.jpg)
+
+Phone size example:
+
+![Example of the buttons on a phone screen size](./docs/screenshots/buttonsphone.jpg)
 
 - They also have a hover pseudo class. The user should see that they change to a black background with white text when hovered over.
 
 ![Image shows the button colours with a mouse hovering over it](./docs/screenshots/buttonsblack.jpg)
 
-- **The Result Area:** Impotantly both the choices and the scores are blank and set to 0 when the user first opens the page. The user can also click on the heading to refresh the page at any time to reset them.
+- **The Result Area:** The user will be able to see the results of the game here. The box is responsive to the screen size.
+
+Desktop size example:
+
+![Example of results area on desktop screen size](./docs/screenshots/resultsdesktop.jpg)
+
+Tablet size example:
+
+![Example of results area on a tablet screen size](./docs/screenshots/resultstablet.jpg)
+
+Phone size example:
+
+![Example of results area on a phone screen size](./docs/screenshots/resultsphone.jpg)
+
+- Impotantly both the choices and the scores are blank and set to 0 when the user first opens the page. The user can also click on the heading to refresh the page which will reset them.
 
 ![Screenshot showing the scores set to 0 under the image](./docs/screenshots/blank.jpg)
 
-- **Results and Scores:** When the user clicks on a button, its 'data-type' or the text within the button should show up after 'You chose:' to show the user what they chose. The computers random choice will then be visible to the user after the 'Computer chose:' text. The text following 'Result:' will also change depending on the outcome, so that the user can see it, and the score will then change acordingly for the user to see.
-
-Examples:
+- **Game Testing:** Before styling this area I tested every single outcome of the game to make sure it worked as expected. I did this by clicking on each button until I got each possible outcome, and checking they were correct. I also made sure that the score was going up appropriately. Here are a few test examples:
 
 The user picks ice and computer picks fire. The user looses, the computer gains a point.
 
@@ -136,13 +184,15 @@ Example of the score increasing as the game is played multiple times:
 
 ![The W3C Validator showing no errors in my CSS](./docs/screenshots/cssval.jpg)
 
-- I have tested my JavaScript using [JSHint](https://jshint.com/) and there is one warning but no errors. The variable 'result' that is undefined is on purpose, so that it resets to blank every time the page is refreshed or opened.
+- I have tested my JavaScript using [JSHint](https://jshint.com/) and there is no errors. The variable 'result' that is undefined is on purpose, so that it resets to blank every time the page is refreshed or opened.
 
 ![The JSHint validator showing no errors in my JavaScript](./docs/screenshots/jshint2.jpg)
 
 - I have tested my site using the devtools Lighthouse feature. The score is very good with a minimum of 90% in each field.
 
 ![The lighthouse report showing every field is green](./docs/screenshots/lh1.jpg)
+
+<!-- ADD LIGHTHOUSE IMAGE -->
 
 ---
 
