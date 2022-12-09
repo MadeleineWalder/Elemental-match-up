@@ -188,11 +188,9 @@ Example of the score increasing as the game is played multiple times:
 
 ![The JSHint validator showing no errors in my JavaScript](./docs/screenshots/jshint2.jpg)
 
-- I have tested my site using the devtools Lighthouse feature. The score is very good with a minimum of 90% in each field.
+- I have tested my site using the devtools Lighthouse feature. The score is very good with a minimum of 94% in each field.
 
 ![The lighthouse report showing every field is green](./docs/screenshots/lh1.jpg)
-
-<!-- ADD LIGHTHOUSE IMAGE -->
 
 ---
 
