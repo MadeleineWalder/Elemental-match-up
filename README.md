@@ -1,6 +1,6 @@
 # Pokémon Rock - Paper - Scissors!
 
-This website is made to display and run the traditional childhood game of rock-paper-scissors but with a fun twist. Based on the famous 'Rock-Paper-Scissors-Lizard-Spock game from the popular TV series The Big Bang Theory, my game is using the type match ups from the world wide famouse franchise of Pokémon. There are five different options for the users to choose from, and although there are many more Pokémon types eacvh of these five have two weaknesses and two strengths. This makes it an equal chance of winning or loosing no matter what you pick, just like in regular rock-paper-scissors. The goal with this website was to make a fun looking game that is also fairly simple so it is easy for children use. They are able to play against the computer and see the scores clearly. As well as being a childrens game, the website could also be considered educational in helping children to learn the type match ups as this would be very helpful when playing the Pokémon card or video games.
+This website is made to display and run a simple game of 'rock-paper-scissors' but with a fun twist. Based on the famous 'Rock-Paper-Scissors-Lizard-Spock' game from the popular TV series The Big Bang Theory, my game is using the type match ups from the world wide famouse franchise of Pokémon. There are five different options for the users to choose from, and although there are many more Pokémon types each of these five have two weaknesses and two strengths. This makes it an equal chance of winning or loosing no matter what you pick, just like in regular rock-paper-scissors. The goal with this website was to make a fun looking game that is also fairly simple so it is easy for children play. They are able to play against the computer and see the scores clearly. The game helps children to have fun whilst also learning the type match ups, which would come in handy when playing the Pokémon card or video games too.
 
 ### Link to deployed site: https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
 
@@ -20,9 +20,11 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ---
 
-## Target Audience
-- The target audience for this website is definitely children at around 5 - 12 years old. It is at this young age that most people are introduced to rock-paper-scissors, usually in primary school. However this game is a little more complex with it having five options rather than 3, hence why I would argue that chldren up to 12 years old would find it interesting. Especially if they are into Pokémon, which is aimed at children of this age group too and is still widely popular today.
--  To cater to ages 5 -12 years the site needs to be easy to read and navigate with the help of clear, simple text and bold colours. Use of images will help to explain the rules better than lots of written instructions.
+## Target Audience:
+
+- The target audience for this website is definitely children at around 5 - 12 years old. It is at this young age that most people are introduced to rock-paper-scissors, usually in primary school. However this game is a little more complex with it having five options rather than 3, hence why I would argue that chldren up to 12 years old would find it interesting. Especially if they like Pokémon which is aimed at children of this age group too and is still widely popular today.
+
+-  To cater to ages 5 -12 years the site needs to be easy to read and navigate with the help of clear, simple text and bold colours. 
 
 ---
 
@@ -30,29 +32,27 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ### *Design Features:*
 
-- **Color Scheme:** I wanted the colour scheme to be bright ans playful to appeal to children. It is also based around the colours often used in the Pokémon franchise itself to clearly show what the game is about. I used the a blue outline with yellow text for the header, taking inspiration from the classic blue and yellow Pokémon logo. Of course due to copyright I could not use their actual logo in my work. The colours of the buttons are based off of what colours are commonly used for each type in the Pokémon games, for example red for fire, light blue for ice and so on. This will help anyone who has played the video games to remember the types and noy get confused by the colours chosen. I kept the background white and used black text for two reasons: this is how text oftent appears in the video games, and it is easy to read for young children whilst contrasting nicely from the brightly coloured buttons.
+- **Color Scheme:** I wanted the colour scheme to be bright and playful to appeal to children. It is also based around the colours often used in the Pokémon franchise itself to clearly show what the game is about. I used the a blue outline with yellow text for the header, taking inspiration from the classic blue and yellow Pokémon logo. Of course due to copyright I could not use their actual logo in my work. The colours of the buttons are based off of what colours are commonly used for each type in the Pokémon games, for example red for fire, light blue for ice and so on. This will help anyone who has played the video games to remember the types and noy get confused by the colours chosen. I kept the background white and used black text for two reasons: this is how text oftent appears in the video games, and it is easy to read for young children whilst contrasting nicely from the brightly coloured buttons.
 
-- **Font:** I used a font called 'Nerko One' which I found on Google Fonts. I chose it because it has a fun yet simplistic look to suit my young target audience. It's not too complicated but also suits the playful Pokémon theme very well as it's quite bold and curvy. I decided to stick with this font for the entire site (except in the diagram image as I couldn't use it there) as it worked do well and gave the site a complete, clean look. Multiple fonts on a website with not so much content coould look messy and be harder for young children to read. At first I was annoyed that I could'nt add the same font into the diagram, but then I realised this was probably better. It having a different font from the buttons shows that it is not interactable, but a separate image that cannot be clicked on. Helvetica is the name of the font used in the diagram and I chose it because it's a little thinner which gives it a simple and clean look. Again it's very easy to read, which is essential for the diagram to convey information effectively.
+- **Font:** I used a font called 'Nerko One' which I found on Google Fonts. I chose it because it has a fun yet simplistic look to suit my young target audience. It's not too complicated but also suits the playful Pokémon theme very well as it's quite bold and curvy. I decided to stick with this font for the entire site as it worked do well and gave the site a complete, clean look. Multiple fonts on a website with not so much content could look messy and be harder for young children to read. 
 
 ### *Structural Features:*
 
-- **The Header:** In the header I simply used a h1 element to write the title of my page. I didn't want it to be too long as that would be confusing and not very eye-catching. So I went with 'Pokémon Rock-Paper-Scissors' instead of something like 'Ice-Ground-Fire-Grass-Rock', which would be an obvious name for it since the game itself is based on Rock-Paper-Scissors-Lizard-Spock. However this is a little too long and hard to remember to appeal for my target audience. Referencing both Pokémon and rock-paper-scissors in the header immediatly tells the user what the game is about.
+- **The Header:** In the header I simply used a h1 element to write the title of my page. I didn't want it to be too long as that would be confusing and not very eye-catching. So I went with 'Pokémon Rock-Paper-Scissors' instead of something like 'Ice-Ground-Fire-Grass-Rock', which would be an obvious name for it since the game itself is based on Rock-Paper-Scissors-Lizard-Spock. However this is a little too long and hard to remember for my young target audience. Referencing both Pokémon and rock-paper-scissors in the header immediatly tells the user what the game is about.
 
-- **The Choice Area:** This is the name given to a class which is applied to the div containing my buttons. It is the area of the page where the user can choose their option out of the five given type. The buttons have a hover rule applied in the CSS so that they turn black with white text when hovered over. This is also where the JavaScript comes in. An event listener is applied to the buttons. When a buttons is clicked, its name or 'data-type' is set as the user's choice. A function is then called to make the computer pick a random answer out of the same five options. THis is set as the computers choice. The users and computers choices are then compared in another function. The result is then displayed in the next section of the page.
+- **The Rules:** This area contains the rules of the game written clearly in black on the white background. This way the user can see them easy and reference them when needed.
 
-- **The Result Area:** The result area consists of three paragraphs each with a span for an answer to be put into. The colours here are black text on a white background, keeping with the flow of the page. The users choice is diplayed using JavaScript, so the user can check what they picked, as is the computers random answer. If the function comparing the two choices finds that they are the same, it will siplay the message: "The computer chose the same answer, it's a draw!". If it finds that the users choice beats the computers choice, it will display: "You win!". If the computer beats the user it will display: "You loose!". This helps the user understand what is happening. It is of course important that they know if they won or not.
+- **The Choice Area:** This area contains the clickable buttons. It is the area of the page where the user can choose their option out of the five given types. The buttons have a hover rule applied in the CSS so that they turn black with white text when hovered over. 
 
-- **The Score Area:** As the name might suggest the scores are displayed here. Appon determining if the user won, lost or drew a function is called in JavaScript which changes the score acordingly. If it finds that the result was "The computer chose the same answer, it's a draw!" it will do nothing. No points will be awarded. If the answer was "You win!" it will increase the users score by 1. Likewise if the result was "You loose!" it will increase the computers score by 1. The two different scores are written on separate lines to help prevent the user confusing the two.
-
-- **The Footer:** The footer for this website is very simple, containing only the written rules of the game. I tried to keep the explanation as short and easy to understand as possible. 
+- **The Result Area:** The result area is where the users choice, computers random choice, result and scores are shown to the user. The colours here are black text on a white background, keeping with the flow of the page. It is of course important that the user can see all of this information, especially if they won or lost.
 
 ## Future Features: 
 
 - **Other Game Designs:** I would love to make the game a little more interesting by having it be based on actual knowledge rather than complete chance. For example having the computer display a random image of a Pokémon and the user then has to guess what type it is. If the user is correct they get a point, if not the computer gets a point.
 
-- **Multiple Game Modes:** Having multiple game modes to choose from would also be a very cool feature to add to this website. For example a similar game using just water-fire-grass. It could be considered an 'easy mode' as it has less rules and is easier to understand.
+- **Multiple Game Modes:** Having multiple game modes to choose from would also be a very cool feature to add to this website. For example a similar game using just 'water-fire-grass'. It could be considered an 'easy mode' as it has less rules and is easier to understand.
 
-- **Icons:** I considered using icons of the five elements in the buttons next to the written names. The problem with this is that it's very hard to find good, clear icons to differenciate between ground and rock. If I could source or make some good ones they might add a nice touch to the page and aid the user in the game. Especiallly for younger aged players who don't yet have good reading skills.
+- **Icons:** I considered using icons of the five elements in the buttons next to the written names. The problem with this is that it's very hard to find good, clear icons to differenciate between ground and rock. If I could source or make some good ones they might add a nice touch to the page and aid the user in the game. Especiallly for younger players who don't yet have good reading skills.
 
 ---
 
@@ -69,23 +69,23 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ## The Game: 
 
-I made the game for this website using JavaScript, and it's written as follows: 
+### I made the game for this website using JavaScript, and basic steps are as follows: 
 
 - First I added an event listener for when the page content loads to begin the game. 
 
-- This triggers another event listener, which listens for the user to click one of the five buttons. When the user clicks a button, the value is assigned to a variable called userChoice. This is displayed to the user so they can see what button they clicked. 
+- This triggers another event listener, which listens for the user to click one of the five buttons. When the user clicks a button, the value is assigned to a variable called 'userChoice'. This is displayed to the user so they can see what button they clicked. 
 
-- The computer then chooses a random number from 0-4. Each number corresponds to one of the five values, which are the same as the five buttons the user can click. This value is assigned to a variable called compChoice, and its content displayed to the user so they can see what the computer picked.
+- The computer then chooses a random number from 0-4. Each number corresponds to one of the five values, which are the same as the five buttons the user can click. This value is assigned to a variable called 'compChoice', and its content displayed to the user so they can see what the computer picked.
 
-- The two variables userChoice and compChoice are then compared. If they are the same it's a draw, and the result string 'The computer chose the same answer, it's a draw!' is returned. 
+- The two variables 'userChoice' and 'compChoice' are then compared. If they are the same it's a draw, and the result string "The computer chose the same answer, it's a draw!" is returned. 
 
-- If the userChoice meets the win conditions for the option chosen, the result string 'You win!' is returned. For example if the userChoice was 'fire', the win conditions would be 'grass' and 'ice' because fire beats those. So if the compChoice was either 'grass' or 'ice' then the win conditions would be met.
+- If the userChoice meets the win conditions for the option chosen, the result string "You win!" is returned. For example if the userChoice was 'fire', the win conditions would be 'grass' and 'ice' because fire beats those. So if the compChoice was either 'grass' or 'ice' then the win conditions would be met.
 '
-- However if userChoice does not meet the win conditions, and the two variables are not the same then the user must have lost, it's the only other option. Therefore the result string 'You loose!' is returned. 
+- However if userChoice does not meet the win conditions, and the two variables are not the same then the user must have lost, it's the only other option. Therefore the result string "You loose!" is returned. 
 
 - This result string is then displayed to the user so that they can see if they won, lost or drew. 
 
-- If the result string is 'You win!' the users score will be increased by one. Likewise if it's 'You loose!' the computers score will be increased by one. Of course in the case of a draw nothing needs to happen as no points are awarded.
+- If the result string is "You win!" the users score will be increased by one. Likewise if it's "You loose!" the computers score will be increased by one. Of course in the case of a draw nothing needs to happen as no points are awarded.
 
 ---
 
@@ -104,7 +104,7 @@ I made the game for this website using JavaScript, and it's written as follows:
 
 Desktop size example:
 
-![Screenshot of website home page on desktop](./docs/screenshots/maindesktop.jpg)
+![Screenshot of website home page on desktop screen size](./docs/screenshots/maindesktop.jpg)
 
 Tablet size example:
 
@@ -118,7 +118,7 @@ Phone size example:
 
 Desktop size example:
 
-![Screenshot of the header on desktop](./docs/screenshots/headerdesktop.jpg)
+![Screenshot of the header on desktop screen size](./docs/screenshots/headerdesktop.jpg)
 
 Tablet size example:
 
@@ -132,7 +132,7 @@ Phone size example:
 
 Desktop size example:
 
-![Screenshot of the instructions on desktop](./docs/screenshots/instructionsdesktop.jpg)
+![Screenshot of the instructions on desktop screen size](./docs/screenshots/instructionsdesktop.jpg)
 
 Tablet size example:
 
@@ -146,7 +146,7 @@ Phone size example:
 
 Desktop size example:
 
-![Example of the buttons normally](./docs/screenshots/buttons.jpg)
+![Example of the buttons on desktop screen size](./docs/screenshots/buttons.jpg)
 
 Tablet size example:
 
@@ -218,7 +218,7 @@ Example of the score increasing as the game is played multiple times:
 
 ## Bugs:
 
-- Luckily I didn't come across any bugs whilst making this website. I think this is because it is relatively simple and there isn't much content to discover bugs within. The JavaScript was very difficult for me, and at times I wasn't sure why my code didn't work. However it was simply lack of knowledge on my part causing this, not any actual bugs.
+- Luckily I didn't come across any bugs whilst making this website. I think this is because it is relatively simple and there isn't much content to discover bugs within.
 
 ## Deployment:
 
@@ -246,4 +246,4 @@ https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
 
 ## Credits:
 
-- I would like to credit a website called [codesdope.com](https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/) as I used a line of code displayed on their website in my CSS file on line 40. The syntax I used was ' -webkit-text-stroke: ' and I followed it with my own code of ' 1px #2e67b0; ' it to add the blue outline to my header text. 
+- I would like to credit a website called [codesdope.com](https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/) as I used a line of code displayed on their website in my CSS file on line 40. The syntax I used was ' -webkit-text-stroke: ' and I followed it with my own code of ' 1px #2e67b0; ' to add the blue outline to my header text. 
