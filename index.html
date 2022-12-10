@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website description keywords for better discoverability -->
     <meta name="description" content="Pokemon rock paper scissors game">
 
+    <!-- Link to Google Fonts and CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Pokemon Rock-Paper-Scissors</title>
 </head>
 <body>
+    <!-- Overall div for styling the header to stay at the top of the page -->
     <div class="content">
+
+        <!-- Anchor element linking this index.html file, user can click logo to refresh page -->
         <header>
             <a href="index.html">
                 <h1 class="logo">Pokémon Rock-Paper-Scissors!</h1>
             </a>
         </header>
+
+        <!-- Separate div for instructions -->
         <div class="instructions">
             <p>Rules:</p>
             <p>Ice freezes Ground and Grass.</p>
@@ -25,6 +34,8 @@
             <p>Grass grows on Ground and Rock.</p>
             <p>Rock destroys Ice and Fire.</p>
         </div>
+
+        <!-- Separate div for buttons -->
         <div class="choice-area">
             <button data-type="ice" class="btn btn--blue">
                 Ice
@@ -42,6 +53,8 @@
                 Rock
             </button>
         </div>
+
+        <!-- Separate div for the results and the scores -->
         <div class="result-container">
             <div class="result-area">
                 <p>You chose: <span id="user-choice"></span></p>
@@ -52,6 +65,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Linking the JavaScript file last for better loading times on main page content -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
