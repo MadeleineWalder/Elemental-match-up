@@ -67,6 +67,26 @@ This website is made to display and run the traditional childhood game of rock-p
 
 ---
 
+## The Game: 
+
+I made the game for this website using JavaScript, and it's written as follows: 
+
+- I added an event listener for when the page content loads. This listens for the user to click one of the five buttons. When the user clicks a button, the value is assigned to a variable called userChoice. This is displayed to the user so they can see what button they clicked. 
+
+- The computer then chooses a random number from 0-4. Each number corresponds to one of the five values, which are the same as the five buttons the user can click. This value is assigned to a variable called compChoice, and its content displayed to the user so they can see what the computer picked.
+
+- The two variables userChoice and compChoice are then compared. If they are the same it is a draw and the result string 'The computer chose the same answer, it's a draw!' is returned. 
+
+- If the userChoice meets the win conditions for the option chosen, the result string 'You win!' is returned. For example if the userChoice was fire, the win conditions would be grass and ice because fire beats those. So if the compChoice was either grass or ice then the win conditions would be met.
+
+- However if userChoice does not meet the win conditions, and the two variables are not the same then the user must have lost, it's the only other option. Therefore the result string 'You loose!' is returned. 
+
+- This result string is then displayed to the user so that they can see if they won, lost or drew. 
+
+- If the result string is 'You win!' the users score will be increased by one. Likewise if it's 'You loose!' the computers score will be increased by one. Of course in the case of a draw nothing needs to happen as no points are awarded.
+
+---
+
 ## Testing:
 
 ### Supported Screens and Browsers:
