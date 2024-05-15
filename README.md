@@ -1,8 +1,8 @@
-# Pokémon Rock - Paper - Scissors!
+# Elemental Match-Up!
 
 This website is made to display and run a simple game of 'rock-paper-scissors' but with a fun twist. Based on the famous 'Rock-Paper-Scissors-Lizard-Spock' game from the popular TV series The Big Bang Theory, my game is using the type match ups from the world wide famouse franchise of Pokémon. There are five different options for the users to choose from, and although there are many more Pokémon types each of these five have two weaknesses and two strengths. This makes it an equal chance of winning or loosing no matter what you pick, just like in regular rock-paper-scissors. The goal with this website was to make a fun looking game that is also fairly simple so it is easy for children play. They are able to play against the computer and see the scores clearly. The game helps children to have fun whilst also learning the type match ups, which would come in handy when playing the Pokémon card or video games too.
 
-### Link to deployed site: https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
+### Link to deployed site: https://madeleinewalder.github.io/Elemental-match-up/
 
 ![A screenshot of my finished website appearing on different devices](./docs/screenshots/finishedshot.jpg)
 
@@ -240,7 +240,7 @@ Example of the score increasing as the game is played multiple times:
 - I made sure to click on the link to check that it worked.
 
 **Link to deployed site:**
-https://madeleinewalder.github.io/Pokemon-rock-paper-scissors/
+https://madeleinewalder.github.io/Elemental-match-up/
 
 ---
 
